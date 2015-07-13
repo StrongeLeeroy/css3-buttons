@@ -1,0 +1,68 @@
+.controls-button-container {
+    width: 160px;
+}
+.controls-button {
+    overflow: hidden;
+    margin: 0 auto;
+    color: #966FD6;
+    border: 3px solid #966FD6;
+    height: 50px;
+    width: 50px;
+    transition: all 0.2s ease-in-out 0.2s;
+    div {
+        display: inline-block;
+    }
+    .hidden {
+        position: relative;
+        margin: 0 auto;
+        min-width: 150px;
+        left: 0;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        transition: opacity 0.15s ease-in-out 0s, top 0.2s ease-in-out 0s;
+        opacity: 0;
+        top: 0;
+        i {
+            cursor: pointer;
+            padding: 3px;
+            transition: 0.2s ease-in;
+            &:hover {
+                color: #D5C5EF;
+                transform: scale(1.5, 1.5);
+                transition: color 0.1s ease-in, transform 0.1s linear;
+            }
+        }
+    }
+    .shown {
+        position: relative;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        transition: all 0.2s ease-in-out 0.2s;
+    }
+    &:hover {
+        width: 150px;
+        transition: all 0.2s ease-in-out 0s;
+        .shown {
+            opacity: 0;
+            top: -50px;
+        }
+        .hidden {
+            opacity: 1;
+            top: -50px;
+            left: 0;
+            transition: opacity 0.1s ease-in-out 0.2s, top 0.2s ease-in-out 0.2s, right 0.2s ease-in 0.2s;
+        }
+    }
+    &.inverted {
+        background-color: #966FD6;
+        color: white;
+        i:hover {
+            color: #F2EEFA;
+        }
+    }
+}
+

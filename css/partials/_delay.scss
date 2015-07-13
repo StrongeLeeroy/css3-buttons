@@ -1,0 +1,32 @@
+.delay-button {
+    height: 50px;
+    width: 150px;
+    color: #A4F0B7;
+    border: 2px solid #A4F0B7;
+    background-color: white;
+    perspective: 600px;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    transition: color 0.3s line-height 0.3s;
+    .orig {
+        height: 50px;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .delayed {
+        text-align: left;
+        padding-left: 5%;
+        margin-top: -5px;
+        font-weight: 200;
+    }
+    &:hover {
+        .orig {
+            height: 25px;
+            margin-left: -30%;
+            margin-top: -10px;
+            transition: 0.3s;
+        }
+    }
+}

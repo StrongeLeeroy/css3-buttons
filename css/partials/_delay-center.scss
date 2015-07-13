@@ -1,0 +1,31 @@
+.delay-center-button {
+    height: 50px;
+    width: 150px;
+    color: #A4F0B7;
+    border: 2px solid #A4F0B7;
+    background-color: white;
+    perspective: 600px;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    .orig {
+        transition: 0.2s;
+    }
+    .delayed {
+
+        font-weight: 200;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .orig {
+            margin-top: -10px;
+            transition: 0.2s;
+        }
+        .delayed {
+            margin-top: -30px;
+            transition: 0.3s ease-out;
+        }
+    }
+}

@@ -1,121 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
-
+/* line 2, C:/Users/gorkah/css3-buttons/css/main.scss */
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
+/* line 6, C:/Users/gorkah/css3-buttons/css/main.scss */
 body {
-    padding: 50px;
-    font-family: 'Source Sans Pro';
-    font-weight: 700;
-}
+  padding: 50px;
+  font-family: 'Source Sans Pro';
+  font-weight: 700; }
 
-.cube-button-container {
-  width: 150px;
-  height: 50px;
-  position: relative;
-  perspective: 6000px;
-}
-
-.cube-button-container .cube {
-    width: 100%;
-    height: 50px;
-    transform-style: preserve-3d;
-    transition: transform 0.4s;
-    cursor: pointer;
-}
-
-.cube-button-container .cube:hover {
-    transform: rotateX(90deg);
-    transition: transform 0.2s;
-}
-
-.cube-button-container .cube figure {
-    width: 100%;
-    height: 50px;
-    display: block;
-    position: absolute;
-    transition: transform 0.5s;
-}
-
-.cube-button-container .cube .front {
-    background-color: #779ECB;
-    color: rgba(255, 255, 255, 0.95);
-    transform: rotateY(0deg) translateZ(25px);
-}
-
-.cube-button-container .cube .bottom {
-    background-color: #AEC6CF;
-    color: rgba(0, 0, 0, 0.7);;
-    transform: rotateX(-90deg) translateZ(25px);
-}
-
-.cube-button-container figure p {
-    text-align: center;
-    line-height: 50px;
-}
-
-
-
-.vertical-fill-button {
-    height: 50px;
-    width: 150px;
-    border: 2px solid #C23B22;
-    line-height: 50px;
-    text-align: center;
-    perspective: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    color: #C23B22;
-    transition: color 0.2s;
-}
-
-.vertical-fill-button:hover {
-    color: white;
-    transition: color 0.2s;
-}
-
-.vertical-fill-button .color-fill {
-    width: 200%;
-    margin-left: -50%;
-    height: 50px;
-    background-color: #C23B22;
-    transform-style: preserve-3d;
-    position: relative;
-    top: -50px;
-    transform: rotateX(90deg);
-    z-index: -100;
-    transition: transform 0.2s;
-}
-
-.vertical-fill-button:hover .color-fill {
-    transform: rotateX(0);
-    transition: transform 0.2s;
-}
-
-
-
-
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_horizontal.scss */
 .horizontal-fill-button {
-    color: #966FD6;
-    height: 50px;
-    width: 150px;
-    border: 2px solid #966FD6;
-    line-height: 50px;
-    text-align: center;
-    perspective: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.horizontal-fill-button:hover {
+  color: #966FD6;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #966FD6;
+  line-height: 50px;
+  text-align: center;
+  perspective: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s; }
+  /* line 13, C:/Users/gorkah/css3-buttons/css/partials/_horizontal.scss */
+  .horizontal-fill-button:hover {
     color: white;
-    transition: color 0.3s;
-}
-
-.horizontal-fill-button .color-fill {
+    transition: color 0.3s; }
+    /* line 17, C:/Users/gorkah/css3-buttons/css/partials/_horizontal.scss */
+    .horizontal-fill-button:hover .color-fill {
+      transform: rotateY(0);
+      transition: transform 0.3s; }
+  /* line 23, C:/Users/gorkah/css3-buttons/css/partials/_horizontal.scss */
+  .horizontal-fill-button .color-fill {
     width: 100%;
     height: 100px;
     margin-top: -25px;
@@ -125,36 +41,95 @@ body {
     top: -50px;
     transform: rotateY(90deg);
     z-index: -100;
-    transition: transform 0.3s;
-}
+    transition: transform 0.3s; }
 
-.horizontal-fill-button:hover .color-fill {
-    transform: rotateY(0);
-    transition: transform 0.3s;
-}
-
-
-
-.diag-fill-button {
-    color: #A4F0B7;
-    height: 50px;
-    width: 150px;
-    border: 2px solid #A4F0B7;
-    background-color: #A4F0B7;
-    line-height: 50px;
-    text-align: center;
-    perspective: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.diag-fill-button:hover {
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_vertical.scss */
+.vertical-fill-button {
+  height: 50px;
+  width: 150px;
+  border: 2px solid #C23B22;
+  line-height: 50px;
+  text-align: center;
+  perspective: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #C23B22;
+  transition: color 0.2s; }
+  /* line 13, C:/Users/gorkah/css3-buttons/css/partials/_vertical.scss */
+  .vertical-fill-button:hover {
     color: white;
-    transition: color 0.3s;
-}
+    transition: color 0.2s; }
+  /* line 18, C:/Users/gorkah/css3-buttons/css/partials/_vertical.scss */
+  .vertical-fill-button .color-fill {
+    width: 200%;
+    margin-left: -50%;
+    height: 50px;
+    background-color: #C23B22;
+    transform-style: preserve-3d;
+    position: relative;
+    top: -50px;
+    transform: rotateX(90deg);
+    z-index: -100;
+    transition: transform 0.2s; }
+  /* line 31, C:/Users/gorkah/css3-buttons/css/partials/_vertical.scss */
+  .vertical-fill-button:hover .color-fill {
+    transform: rotateX(0);
+    transition: transform 0.2s; }
 
-.diag-fill-button .color-fill {
+/* line 2, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+.cube-button-container {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  perspective: 6000px; }
+  /* line 7, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+  .cube-button-container .cube {
+    width: 100%;
+    height: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s;
+    cursor: pointer; }
+    /* line 13, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+    .cube-button-container .cube:hover {
+      transform: rotateX(90deg);
+      transition: transform 0.2s; }
+    /* line 17, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+    .cube-button-container .cube figure {
+      width: 100%;
+      height: 50px;
+      display: block;
+      position: absolute;
+      transition: transform 0.5s; }
+      /* line 23, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+      .cube-button-container .cube figure p {
+        text-align: center;
+        line-height: 50px; }
+    /* line 28, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+    .cube-button-container .cube .front {
+      background-color: #779ECB;
+      color: rgba(255, 255, 255, 0.95);
+      transform: rotateY(0deg) translateZ(25px); }
+    /* line 33, C:/Users/gorkah/css3-buttons/css/partials/_cube.scss */
+    .cube-button-container .cube .bottom {
+      background-color: #AEC6CF;
+      color: rgba(0, 0, 0, 0.7);
+      transform: rotateX(-90deg) translateZ(25px); }
+
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_diag.scss */
+.diag-fill-button {
+  color: #A4F0B7;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #A4F0B7;
+  background-color: #A4F0B7;
+  line-height: 50px;
+  text-align: center;
+  perspective: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s; }
+  /* line 13, C:/Users/gorkah/css3-buttons/css/partials/_diag.scss */
+  .diag-fill-button .color-fill {
     width: 140%;
     margin-left: -30%;
     height: 100px;
@@ -165,126 +140,104 @@ body {
     top: -50px;
     transform: rotateZ(-45deg);
     z-index: -100;
-    transition: transform 0.2s ease-in 0s, opacity 0s ease-out 0s;
-}
+    transition: transform 0.2s ease-in 0s, opacity 0s ease-out 0s; }
+  /* line 26, C:/Users/gorkah/css3-buttons/css/partials/_diag.scss */
+  .diag-fill-button:hover {
+    color: white;
+    transition: color 0.3s; }
+    /* line 29, C:/Users/gorkah/css3-buttons/css/partials/_diag.scss */
+    .diag-fill-button:hover .color-fill {
+      transform: rotateZ(-45deg) rotateX(90deg);
+      opacity: 0;
+      transition: transform 0.2s ease-in 0s, opacity 0.1s ease-out 0.2s; }
 
-.diag-fill-button:hover .color-fill {
-    transform: rotateZ(-45deg) rotateX(90deg);
-    opacity: 0;
-    transition: transform 0.2s ease-in 0s, opacity 0.1s ease-out 0.2s;
-}
-
-
-
-
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_delay.scss */
 .delay-button {
-    height: 50px;
-    width: 150px;
-    color: #A4F0B7;
-    border: 2px solid #A4F0B7;
-    background-color: white;
-    perspective: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    line-height: 50px;
-    text-align: center;
-    transition: color 0.3s line-height 0.3s;
-}
-
-.delay-button .orig {
+  height: 50px;
+  width: 150px;
+  color: #A4F0B7;
+  border: 2px solid #A4F0B7;
+  background-color: white;
+  perspective: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center;
+  transition: color 0.3s line-height 0.3s; }
+  /* line 13, C:/Users/gorkah/css3-buttons/css/partials/_delay.scss */
+  .delay-button .orig {
     height: 50px;
     width: 100%;
-    transition: 0.3s;
-}
-
-.delay-button .delayed {
+    transition: 0.3s; }
+  /* line 18, C:/Users/gorkah/css3-buttons/css/partials/_delay.scss */
+  .delay-button .delayed {
     text-align: left;
     padding-left: 5%;
     margin-top: -5px;
-    font-weight: 200;
-}
-
-.delay-button:hover .orig {
+    font-weight: 200; }
+  /* line 25, C:/Users/gorkah/css3-buttons/css/partials/_delay.scss */
+  .delay-button:hover .orig {
     height: 25px;
     margin-left: -30%;
     margin-top: -10px;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
 
-
-
-
-
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_delay-center.scss */
 .delay-center-button {
-    height: 50px;
-    width: 150px;
-    color: #A4F0B7;
-    border: 2px solid #A4F0B7;
-    background-color: white;
-    perspective: 600px;
-    overflow: hidden;
-    cursor: pointer;
-    line-height: 50px;
-    text-align: center;
-}
-
-.delay-center-button .orig {
-
-    transition: 0.2s;
-}
-
-.delay-center-button .delayed {
-
+  height: 50px;
+  width: 150px;
+  color: #A4F0B7;
+  border: 2px solid #A4F0B7;
+  background-color: white;
+  perspective: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center; }
+  /* line 12, C:/Users/gorkah/css3-buttons/css/partials/_delay-center.scss */
+  .delay-center-button .orig {
+    transition: 0.2s; }
+  /* line 15, C:/Users/gorkah/css3-buttons/css/partials/_delay-center.scss */
+  .delay-center-button .delayed {
     font-weight: 200;
-    transition: 0.3s;
-}
-
-.delay-center-button:hover .orig {
+    transition: 0.3s; }
+  /* line 22, C:/Users/gorkah/css3-buttons/css/partials/_delay-center.scss */
+  .delay-center-button:hover .orig {
     margin-top: -10px;
-    transition: 0.2s;
-}
-
-.delay-center-button:hover .delayed {
+    transition: 0.2s; }
+  /* line 26, C:/Users/gorkah/css3-buttons/css/partials/_delay-center.scss */
+  .delay-center-button:hover .delayed {
     margin-top: -30px;
-    transition: 0.3s ease-out;
-}
+    transition: 0.3s ease-out; }
 
-
-
-
-
-
-
-
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
 .expand-button-container {
-    width: 160px;
-}
+  width: 160px; }
+
+/* line 5, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
 .expand-button {
-    overflow: hidden;
-    cursor: pointer;
-    margin: 0 auto;
-    color: #966FD6;
-    border: 3px solid #966FD6;
-    height: 50px;
-    width: 50px;
-    transition: width 0.2s ease-in-out;
-}
-
-.expand-button div {
-    display: inline-block;
-}
-
-.expand-button .shown {
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 auto;
+  color: #966FD6;
+  border: 3px solid #966FD6;
+  height: 50px;
+  width: 50px;
+  transition: width 0.2s ease-in-out; }
+  /* line 14, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+  .expand-button div {
+    display: inline-block; }
+  /* line 17, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+  .expand-button .shown {
     position: relative;
     left: 0;
     height: 50px;
     width: 100%;
     line-height: 50px;
     text-align: center;
-    transition: all 0.2s ease-in-out;
-}
-
-.expand-button .hidden {
+    transition: all 0.2s ease-in-out; }
+  /* line 26, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+  .expand-button .hidden {
     position: relative;
     right: -50%;
     top: -50px;
@@ -293,72 +246,38 @@ body {
     line-height: 50px;
     text-align: center;
     transition: all 0.2s ease-in-out;
-    opacity: 0;
-}
+    opacity: 0; }
+  /* line 37, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+  .expand-button:hover {
+    width: 150px; }
+    /* line 39, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+    .expand-button:hover .shown {
+      opacity: 0;
+      left: -40%; }
+    /* line 43, C:/Users/gorkah/css3-buttons/css/partials/_expand.scss */
+    .expand-button:hover .hidden {
+      opacity: 1;
+      width: 100%;
+      right: 0; }
 
-.expand-button:hover {
-    width: 150px;
-}
-
-.expand-button:hover .shown {
-    opacity: 0;
-    left: -40%;
-}
-
-.expand-button:hover .hidden {
-    opacity: 1;
-    width: 100%;
-    right: 0;
-}
-
-
-
-
-
-
-
-
-
+/* line 1, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
 .controls-button-container {
-    width: 160px;
-}
+  width: 160px; }
+
+/* line 4, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
 .controls-button {
-    overflow: hidden;
-    margin: 0 auto;
-    color: #966FD6;
-    border: 3px solid #966FD6;
-    height: 50px;
-    width: 50px;
-    transition: all 0.2s ease-in-out 0.2s;
-}
-
-.controls-button .hidden i {
-    cursor: pointer;
-    padding: 3px;
-    transition: 0.2s ease-in;
-}
-
-.controls-button i:hover {
-    color: #D5C5EF;
-    transform: scale(1.5, 1.5);
-    transition: color 0.1s ease-in, transform 0.1s linear;
-}
-
-.controls-button div {
-    display: inline-block;
-}
-
-.controls-button .shown {
-    position: relative;
-    top: 0;
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    text-align: center;
-    transition: all 0.2s ease-in-out 0.2s;
-}
-
-.controls-button .hidden {
+  overflow: hidden;
+  margin: 0 auto;
+  color: #966FD6;
+  border: 3px solid #966FD6;
+  height: 50px;
+  width: 50px;
+  transition: all 0.2s ease-in-out 0.2s; }
+  /* line 12, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+  .controls-button div {
+    display: inline-block; }
+  /* line 15, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+  .controls-button .hidden {
     position: relative;
     margin: 0 auto;
     min-width: 150px;
@@ -368,31 +287,46 @@ body {
     text-align: center;
     transition: opacity 0.15s ease-in-out 0s, top 0.2s ease-in-out 0s;
     opacity: 0;
+    top: 0; }
+    /* line 26, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+    .controls-button .hidden i {
+      cursor: pointer;
+      padding: 3px;
+      transition: 0.2s ease-in; }
+      /* line 30, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+      .controls-button .hidden i:hover {
+        color: #D5C5EF;
+        transform: scale(1.5, 1.5);
+        transition: color 0.1s ease-in, transform 0.1s linear; }
+  /* line 37, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+  .controls-button .shown {
+    position: relative;
     top: 0;
-}
-
-.controls-button:hover {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.2s ease-in-out 0.2s; }
+  /* line 46, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+  .controls-button:hover {
     width: 150px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-.controls-button:hover .shown {
-    opacity: 0;
-    top: -50px;
-}
-
-.controls-button:hover .hidden {
-    opacity: 1;
-    top: -50px;
-    left: 0;
-    transition: opacity 0.1s ease-in-out 0.2s, top 0.2s ease-in-out 0.2s, right 0.2s ease-in 0.2s;
-}
-
-.controls-button.inverted {
+    transition: all 0.2s ease-in-out 0s; }
+    /* line 49, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+    .controls-button:hover .shown {
+      opacity: 0;
+      top: -50px; }
+    /* line 53, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+    .controls-button:hover .hidden {
+      opacity: 1;
+      top: -50px;
+      left: 0;
+      transition: opacity 0.1s ease-in-out 0.2s, top 0.2s ease-in-out 0.2s, right 0.2s ease-in 0.2s; }
+  /* line 60, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+  .controls-button.inverted {
     background-color: #966FD6;
-    color: white;
-}
+    color: white; }
+    /* line 63, C:/Users/gorkah/css3-buttons/css/partials/_controls.scss */
+    .controls-button.inverted i:hover {
+      color: #F2EEFA; }
 
-.controls-button.inverted i:hover {
-    color: #F2EEFA;
-}
+/*# sourceMappingURL=main.css.map */
